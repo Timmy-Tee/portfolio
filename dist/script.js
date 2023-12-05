@@ -24,3 +24,8 @@ setTimeout(()=>{
 }, 400)
 
 
+document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+ });
+
+

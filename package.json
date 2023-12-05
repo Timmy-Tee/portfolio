@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.3.6"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
     "taos": "^1.0.5"
   }
 }
