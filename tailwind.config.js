@@ -1,15 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.{html,js}"],
+  content: {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+    files: ["./dist/*.{html,js}"],
+  },
   theme: {
     extend: {
       screens:{
         sm:     '415px',
-        vs:     '350px',
+        vs:     '340px',
         // md:     '980px'
       },
       colors: {
-        "primary-color":    "rgb(43, 36, 88)",
+        "primary-color":    "#27213C",
         'seconday-color':   '#fefefef3',
         'box-shadow':       'rgba(0, 0, 0, 0.247)',
         'border-color':      'rgba(177, 177, 177, 0.247)',
@@ -17,9 +21,12 @@ module.exports = {
         'twitter':           '#1DA1F2',
         'linkedin':          '#0A66C2',
         'instagram':         '#405DE6',
-        'text':              '#ffaa0c',
+        'text':              '#C1292E',
         'p-text':            '#c2c2c2',
         'banner-text-color': '#5f5f5f8a',
+        'contact-icon':       'rgb(255, 255, 255)',
+        'contact-box-shadow': ' rgba(0, 0, 0, 0.1) 0px 0px 10px',
+        'contact-text':         'rgb(45, 46, 50)',
       },
 
       fontFamily: {
@@ -28,7 +35,8 @@ module.exports = {
       },
 
       padding:{
-        'a-links': '10px 20px',
+      'a-links': '10px 20px',
+      'project-links': '15px 30px',
         65: '65px',
         20: "20px"
       },
@@ -61,6 +69,14 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('taos/plugin')
+  ],
+
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ]
 }
 
