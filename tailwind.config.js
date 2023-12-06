@@ -55,7 +55,9 @@ module.exports = {
         45: "45%",
         90: '90%',
       },
-
+      transitionProperty: {
+        'smooth': "4s all ease-in-out"
+      },
       width:{
         290: "290px",
         380: '380px',

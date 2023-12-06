@@ -572,8 +572,20 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   position: sticky;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .m-3 {
@@ -779,6 +791,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: #eeeeee4d;
 }
 
+.bg-\[\#fefefef1\] {
+  background-color: #fefefef1;
+}
+
 .bg-\[\] {
   background-color: ;
 }
@@ -969,6 +985,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -976,6 +998,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-smooth {
+  transition-property: 4s all ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .\!delay-\[0ms\] {
@@ -1201,6 +1229,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .vs\:justify-between {
     justify-content: space-between;
+  }
+
+  .vs\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .vs\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
   }
 
   .vs\:space-y-4 > :not([hidden]) ~ :not([hidden]) {

@@ -2,6 +2,7 @@ let header = document.querySelector("nav")
 
 window.addEventListener("scroll", ()=>{
     header.classList.toggle("sticky", window.scrollY > 30)
+    
 })
 
 let icon = document.querySelector('#openIcon')
@@ -24,8 +25,17 @@ setTimeout(()=>{
 }, 400)
 
 
-document.addEventListener("contextmenu", (event) => {
-    event.preventDefault();
- });
+// document.addEventListener("contextmenu", (event) => {
+//     event.preventDefault();
+//  });
+let show = document.querySelector("#slide");
 
-
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 80){
+        show.style.display = 'flex'
+    }
+    else{
+        show.style.display = 'none'
+    }
+    
+})
