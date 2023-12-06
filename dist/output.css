@@ -799,6 +799,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: ;
 }
 
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-contact-icon {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1251,6 +1256,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .vs\:p-20 {
     padding: 20px;
+  }
+
+  .vs\:p-\[55px\] {
+    padding: 55px;
+  }
+
+  .vs\:p-\[45px\] {
+    padding: 45px;
+  }
+
+  .vs\:p-\[40px\] {
+    padding: 40px;
   }
 
   .vs\:text-2xl {
