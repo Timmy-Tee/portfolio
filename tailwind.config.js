@@ -21,6 +21,7 @@ module.exports = {
         'twitter':           '#1DA1F2',
         'linkedin':          '#0A66C2',
         'instagram':         '#405DE6',
+        'whatsapp':         '#128c7e',
         'text':              '#C1292E',
         'p-text':            '#c2c2c2',
         'banner-text-color': '#5f5f5f8a',

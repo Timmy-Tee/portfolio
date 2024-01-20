@@ -26,11 +26,9 @@
 }
 
 .blog_img_holder{
-    background: url("/src/image/profile.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
     /* background: red; */
     background-size: cover;
+    overflow: hidden;
     margin: 20px;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s  ease-in-out;
