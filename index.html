@@ -36,11 +36,11 @@
             <a href="index.html" id="logo_text" class="text-lg">Timmy-Tee</a>
     
             <ul class="md:flex gap-2 sm:hidden vs:hidden" id="sideNav">
-                <a class="text-primary-color p-a-links font-medium" href="#"><li>Home</li></a>
-                <a class="text-primary-color p-a-links font-medium" href="#about_me"><li>About</li></a>
-                <a class="text-primary-color p-a-links font-medium" href="#stacks"><li>Stacks</li></a>
-                <a class="text-primary-color p-a-links font-medium" href="#projects"><li>Projects</li></a>
-                <a class="text-primary-color p-a-links font-medium" href="#contacts"><li>Contact</li></a>
+                <a id="navLinks" class="text-primary-color p-a-links font-medium" href="#"><li>Home</li></a>
+                <a id="navLinks" class="text-primary-color p-a-links font-medium" href="#about_me"><li>About</li></a>
+                <a id="navLinks" class="text-primary-color p-a-links font-medium" href="#stacks"><li>Stacks</li></a>
+                <a id="navLinks" class="text-primary-color p-a-links font-medium" href="#projects"><li>Projects</li></a>
+                <a id="navLinks" class="text-primary-color p-a-links font-medium" href="#contacts"><li>Contact</li></a>
             </ul>
 
             <img src="/src/image/menu.png" class="w-8 lg:hidden md:hidden sm:flex cursor-pointer" id="openIcon" alt="">
@@ -102,9 +102,11 @@
         <div class="inner_content basis-6/12 text-primary-color">
             <p id="about_title" class=" text-30 flex md:justify-start items-center vs:text-2xl vs:justify-center "> <span class="border border-text m-3 basis-20 vs:basis-10"></span>[ About Me ] <span class="border border-text m-3 basis-20 vs:basis-10"></span></p>
 
-            <p class="text-[45px]">Get To Know Me</p>
+            <p class="text-[45px] sm:text-center vs:text-center lg:text-left">Get To Know Me</p>
             <br>
-            <p class="text-md  leading-8  tracking-wide">I am Egbetokun Timilehin a <span class="text-[#C1292E]">Front-End Developer</span> based in Lagos, Nigeria  With a strong background in front-end technologies and a little bit of Backend technologies, I am an enthusiastic web developer that has a talent for transforming design concepts into dynamic, aesthetically pleasing digital experiences. I enjoy creating smooth, visual appealing and <span class="text-[#C1292E]">user-friendly web experiences</span> that surpass customer expectations. I am motivated to find a role where I can <span class="text-[#C1292E]">challenge myself and provide value to website users</span>. I am excited to use my knowledge and the experiences gained to work alongside different teams to contribute to a company's success</p>
+            <p class="text-md sm:text-center vs:text-center lg:text-left leading-8  tracking-wide">
+                As a front-end developer presently pursuing to become a full stack developer, my name is Egbetokun Timilehin. Currently residing in Lagos, Nigeria, I have a solid foundation in front-end and a smattering of back-end technologies. I am a passionate web developer with a knack for turning creative thoughts into dynamic, visually appealing digital experiences. I want to design user-friendly, slick, visually appealing websites that go above and above for clients. Seeking a position where I can push myself and add value to website visitors is what motivates me. I'm eager to apply my skills and experiences to collaborate with various teams and support an organization's success.
+            </p>
         </div>
         <!-- Text -->
 
@@ -118,7 +120,7 @@
     <div class=" flex justify-center flex-col p-10 items-center bg-[]" id="stacks">
         <p id="about_title"  class="text-primary-color text-30 flex w-full justify-center items-center vs:text-2xl"><span class="border border-text m-3 basis-20 vs:basis-10"></span> [ My Stacks ] <span class="border border-text m-3 basis-20 vs:basis-10"></span></p>
 
-        <div class="p-8 grid gap-3 md:grid-cols-[repeat(4,1fr)] items-center w-full ">
+        <div class="stacks p-8 grid gap-3 md:grid-cols-[repeat(4,1fr)] grid-cols-2  items-center w-full ">
 
            <div class="stacks_img_holder flex items-center justify-center p-20 ">
                 <img class="w-[60px] delay-[300ms] duration-[600ms] taos:translate-y-[-200px] taos:opacity-0" data-taos-offset="400" src="/src/image/stacks/html.png" alt="">
@@ -159,19 +161,19 @@
         </div>
 
             <!-- project 1 -->
-        <div class="inner_projects md:w-[80%] p-[20px] m-[20px] rounded-lg border lg:grid lg:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full md:flex md:flex-col-reverse   delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" id="flip">
+        <div class="inner_projects drop-shadow-md md:w-[80%] p-[20px] m-[20px] rounded-lg border lg:grid lg:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full md:flex md:flex-col-reverse  delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" id="flip">
             
             <div class="project_detail p-[20px]">
                 <div class="project_text">
                         <b class="text-primary-color text-[25px]">E-Voting System</b>
                         <br><br>
-                        <p id="details" class="text-[15px] leading-[1.6rem] text-banner-text-color">The E-voting system project being my  <span class="font-bold text-text"> First Full Stack Project</span> is a project that was built to transform the conventional voting procedure by replacing the antiquated practice of standing in line to cast a ballot to making use of digital tools to make voting safe, easy, and transparent with the goal of improving accessibility, efficiency, and transparency in the electoral system.  It worked well and was effectively utilized in the Faculty of Engineering voting for the 2022–2023 session at my school.
+                        <p id="details" class="text-[15px] leading-[1.6rem] sm:text-center vs:text-center lg:text-left text-portfolio-text">The E-voting system project being my  <span class="font-bold text-text"> First Full Stack Project</span> is a project that was built to transform the conventional voting procedure by replacing the antiquated practice of standing in line to cast a ballot to making use of digital tools to make voting safe, easy, and transparent with the goal of improving accessibility, efficiency, and transparency in the electoral system.  It worked well and was effectively utilized in the Faculty of Engineering voting for the 2022–2023 session at my school.
                         </p>
                         <br>
                         <div class="projects_stacks">
-                            <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
-                            <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-5">Server:</span> Nodejs - [Express]</p>
-                            <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">Database:</span> Mongodb - [Mongoose]</p>
+                            <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
+                            <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-5">Server:</span> Nodejs - [Express]</p>
+                            <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">Database:</span> Mongodb - [Mongoose]</p>
                         </div>
                         <br><br>
                         <a class="border border-border-color rounded-full p-project-links bg-text text-sm text-white" href="https://election-orm9.onrender.com/" target="_blank">Live Demo <i class="fa fa-bullseye"></i></a>
@@ -190,7 +192,7 @@
 
 
                 <!-- project 2 -->
-                <div class="inner_projects md:w-[80%] p-[20px] md:grid m-[20px] rounded-lg border md:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full sm:flex sm:flex-col-reverse delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" id="flip">
+                <div class="inner_projects md:w-[80%] p-[20px] md:grid m-[20px] rounded-lg border md:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full sm:flex sm:flex-col-reverse delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 drop-shadow-md" id="flip">
 
                     <div class="project_detail p-[20px] flex items-center justify-center" id="proj_img">
                             <img class="" src="/src/image/projects/inventory.png" alt="">
@@ -199,14 +201,14 @@
                         <div class="project_text">
                                 <b class="text-primary-color text-[25px]">Inventory Management System</b>
                                 <br><br>
-                                <p id="details" class="text-[15px] leading-[1.6rem] text-banner-text-color"> This is project was built to help small businessess keep track and manage their inventory, from adding items to auto sorting by categories and organizing all elements involoved. It makes it possible for an organization to have an organized record of all the assets and items under its control, serving as a single source of information on the location of each item, vendor and supplier details, specifications, and the total quantity of a certain item that is currently in stock
+                                <p id="details" class="text-[15px] leading-[1.6rem] text-portfolio-text sm:text-center vs:text-center lg:text-left"> This is project was built to help small businessess keep track and manage their inventory, from adding items to auto sorting by categories and organizing all elements involoved. It makes it possible for an organization to have an organized record of all the assets and items under its control, serving as a single source of information on the location of each item, vendor and supplier details, specifications, and the total quantity of a certain item that is currently in stock
     
                                 </p>
                                 <br>
                                 <div class="projects_stacks">
-                                    <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
-                                    <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-5">Server:</span> Nodejs - [Express]</p>
-                                    <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">Database:</span> Mongodb - [Mongoose], Cloudinary</p>
+                                    <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
+                                    <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-5">Server:</span> Nodejs - [Express]</p>
+                                    <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">Database:</span> Mongodb - [Mongoose], Cloudinary</p>
                                 </div>
                                 <br><br>
                                 <a class="border border-border-color rounded-full p-project-links bg-text text-sm text-white" href="https://inventoryms.onrender.com/" target="_blank">Live Demo <i class="fa fa-bullseye"></i></a>
@@ -220,19 +222,19 @@
 
         
         <!-- project 3 -->
-        <div class="inner_projects md:w-[80%] p-[20px] grid m-[20px] rounded-lg border lg:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
+        <div class="inner_projects md:w-[80%] p-[20px] grid m-[20px] rounded-lg border lg:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 drop-shadow-md">
 
             
             <div class="project_detail p-[20px]">
                 <div class="project_text">
                         <b class="text-primary-color text-[25px]">TEDx AjayiCrowtherU</b>
                         <br><br>
-                        <p id="details" class="text-[15px] leading-[1.6rem] text-banner-text-color"> <span class="font-bold text-text">TEDx</span>   is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED talks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x=independently organized TED event. <span class="text-text font-extrabold">TedxAjayiCrowtherU </span> is a self-organized event that will feature live Ted presentations. The goal of TEDxAjayiCrowtherU is to raise global leaders and problem solvers.
+                        <p id="details" class="text-[15px] leading-[1.6rem] sm:text-center vs:text-center lg:text-left text-portfolio-text"> <span class="font-bold text-text">TEDx</span>   is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED talks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x=independently organized TED event. <span class="text-text font-extrabold">TedxAjayiCrowtherU </span> is a self-organized event that will feature live Ted presentations. The goal of TEDxAjayiCrowtherU is to raise global leaders and problem solvers.
 
                         </p>
                         <br>
                         <div class="projects_stacks">
-                            <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
+                            <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
                         </div>
                         <br><br>
                         <a class="border border-border-color rounded-full p-project-links bg-text text-sm text-white" href="https://tedxajayicrowtheru.com.ng/" target="_blank">Live Demo <i class="fa fa-bullseye"></i></a>
@@ -248,7 +250,7 @@
 
 
         <!-- project 3 -->
-        <div class="inner_projects md:w-[80%] p-[20px] md:grid m-[20px] rounded-lg border md:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full sm:flex sm:flex-col-reverse delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" id="flip">
+        <div class="inner_projects md:w-[80%] p-[20px] md:grid m-[20px] rounded-lg border md:grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(1,1fr)] sm:w-full vs:w-full sm:flex sm:flex-col-reverse delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 drop-shadow-md" id="flip">
 
             <div class="project_detail p-[25px] flex items-center justify-center" id="proj_img">
                     <img src="/src/image/projects/hackathon.png" alt="">
@@ -257,8 +259,8 @@
                 <div class="project_text">
                         <b class="text-primary-color text-[25px]">Crushing Tech Hackathon</b>
                         <br><br>
-                        <p id="details" class="text-[15px] leading-[1.6rem] text-banner-text-color">Crushing Tech Hackathon happens to be the first hackathons i participated in, the hackathon task was to replicate a figma design for the shopify setup guide page where customers are priviledged with the following features: <br><br>
-                            <ul class="text-[15px] leading-[1.6rem] text-banner-text-color">
+                        <p id="details" class="text-[15px] leading-[1.6rem] text-portfolio-text sm:text-center vs:text-center lg:text-left">Crushing Tech Hackathon happens to be the first hackathons i participated in, the hackathon task was to replicate a figma design for the shopify setup guide page where customers are priviledged with the following features: <br><br>
+                            <ul class="text-[15px] leading-[1.6rem] text-portfolio-text">
                                 <li>Customizing Their Online Store</li>
                                 <li>Adding their products</li>
                                 <li>Adding a custom domin e.t.c</li>
@@ -266,7 +268,7 @@
                         </p>
                         <br>
                         <div class="projects_stacks">
-                            <p class="text-[15px] leading-normal"><span class="text-primary-color font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
+                            <p class="text-[15px] leading-normal"><span class="text-text font-medium mr-4">User Interface:</span> HTML, CSS, JS</p>
                         </div>
                         <br><br>
                         <a class="border border-border-color rounded-full p-project-links bg-text text-sm text-white" href="https://shopify-hackathon.onrender.com" target="_blank">Live Demo <i class="fa fa-bullseye"></i></a>
@@ -293,7 +295,7 @@
         <div class="location flex md:basis-[35%] md:space-x-7 md:flex-row sm:flex-col sm:space-x-0 sm:space-y-3 vs:flex-col vs:space-x-0 vs:space-y-3">
 
             <div class="location_card flex items-center space-x-4 p-[20px] ">
-                <span class="bg-contact-icon shadow-md rounded-full w-[50px] h-[50px] flex items-center justify-center">
+                <span class="drop-shadow-md rounded-full w-[50px] h-[50px] flex items-center justify-center">
                     <img src="/src/image/placeholder.png" class="w-[23px]" alt="">
                 </span>
                 <div class="text p-[10px] ">
@@ -304,8 +306,8 @@
             </div>
 
             <div class="location_card flex items-center space-x-4 p-[20px] ">
-                <span class="bg-contact-icon shadow-md rounded-full w-[50px] h-[50px] flex items-center justify-center">
-                    <img src="/src/image/mail.png" class="w-[23px]" alt="">
+                <span class="drop-shadow-md rounded-full w-[50px] h-[50px] flex items-center justify-center">
+                    <img src="/src/image/mail.png" class="w-[23px] " alt="">
                 </span>
                 <div class="text p-[10px]">
                     <b class="text-lg font-extrabold">Mail</b>

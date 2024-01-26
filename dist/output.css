@@ -724,6 +724,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   resize: both;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -801,11 +805,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .bg-\[\] {
   background-color: ;
-}
-
-.bg-contact-icon {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-git-hub {
@@ -965,6 +964,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   color: #5f5f5f8a;
 }
 
+.text-portfolio-text {
+  --tw-text-opacity: 1;
+  color: rgb(34 51 59 / var(--tw-text-opacity));
+}
+
 .text-primary-color {
   --tw-text-opacity: 1;
   color: rgb(39 33 60 / var(--tw-text-opacity));
@@ -984,12 +988,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   opacity: 0;
 }
 
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -998,6 +996,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .blur {
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1260,6 +1263,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     padding: 40px;
   }
 
+  .vs\:text-center {
+    text-align: center;
+  }
+
   .vs\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1333,6 +1340,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .sm\:p-\[45px\] {
     padding: 45px;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-\[30px\] {
@@ -1473,5 +1484,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }

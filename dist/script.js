@@ -9,6 +9,17 @@ let icon = document.querySelector('#openIcon')
 let navBar = document.querySelector('#sideNav');
 let a = 0;
 
+const ulLinks = document.querySelectorAll("#navLinks")
+console.log(ulLinks)
+
+ulLinks.forEach(link => {
+    link.addEventListener('click', (e)=>{
+        navBar.style.display = "none"
+        a = 0
+        console.log(a)
+    })
+})
+
 icon.addEventListener('click', ()=>{
     a++
     if((a % 2) == 1){
@@ -17,12 +28,12 @@ icon.addEventListener('click', ()=>{
     else if((a % 2) == 0){
         navBar.style.display = "none";
     }
-    
+    console.log(Math.floor(a))
 })
 
 setTimeout(()=>{
     $('.preloader').fadeToggle();
-}, 400)
+}, 200)
 
 
 // document.addEventListener("contextmenu", (event) => {
@@ -39,3 +50,6 @@ window.addEventListener("scroll", ()=>{
     }
     
 })
+
+
+

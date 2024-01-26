@@ -28,6 +28,7 @@ module.exports = {
         'contact-icon':       'rgb(255, 255, 255)',
         'contact-box-shadow': ' rgba(0, 0, 0, 0.1) 0px 0px 10px',
         'contact-text':         'rgb(45, 46, 50)',
+        'portfolio-text':     '#22333B',
       },
 
       fontFamily: {
