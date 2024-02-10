@@ -955,11 +955,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   letter-spacing: 0.025em;
 }
 
-.text-\[\#C1292E\] {
-  --tw-text-opacity: 1;
-  color: rgb(193 41 46 / var(--tw-text-opacity));
-}
-
 .text-banner-text-color {
   color: #5f5f5f8a;
 }
