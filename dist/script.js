@@ -14,7 +14,7 @@ console.log(ulLinks)
 
 ulLinks.forEach(link => {
     link.addEventListener('click', (e)=>{
-        navBar.style.display = "none"
+        // navBar.style.display = "none"
         a = 0
         console.log(a)
     })
